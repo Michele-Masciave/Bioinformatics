@@ -1,0 +1,3 @@
+/Users/michele/Desktop/sequece-similarity/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/michele/Desktop/sequece-similarity/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/michele/Desktop/sequece-similarity/cmake-build-debug/CMakeFiles/sequece_similarity.dir
