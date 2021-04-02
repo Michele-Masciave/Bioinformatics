@@ -7,14 +7,14 @@ Program needs a subject (reference) string and a query (read) string as inputs. 
 
 ### output
 
-* Calculated score and alignment performed following the path built by the algorithm.
-* option MATRIX enables to print matrix on console
+* Calculated score and alignment performed following the path built by the algorithm;
+* option MATRIX enables to print matrix on console;
 * option STATISTICS enables matches, mismatches and gaps count.
 
 ### matrix construction
 
 A matrix is initialized for evaluationg the path, matching query (vertical) and subject (horizontal) bases. The first row represents query gaps, first coloumn represents subject gaps. Element (0,0) has zero as value. Step-by-step is calcluated local similarity evaluating each (2x2) sub-matrix of the whole matrix, taking the maximum between:
-- the "diagonal" value with respect to the current one +match is bases are equal or -mismatch if they are not equal;
+- the "diagonal" value with respect to the current one +match if bases are equal or -mismatch if they are not equal;
 - the right value ("up" with respect to the value to obtain) -gap
 - the bottom value ("left" with respect to the value to obtain) -gap
 
