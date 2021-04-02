@@ -13,7 +13,7 @@ Program needs a subject (reference) string and a query (read) string as inputs. 
 
 ### matrix construction
 
-A matrix is initialized for evaluationg the path, matching query (vertical) and subject (horizontal) bases. The first row represents query gaps, first coloumn represents subject gaps. Element (0,0) has zero as value. Step-by-step is calcluated local similarity evaluating each (2x2) sub-matrix of the whole matrix, taking the minimum between:
+A matrix is initialized for evaluationg the path, matching query (vertical) and subject (horizontal) bases. The first row represents query gaps, first coloumn represents subject gaps. Element (0,0) has zero as value. Step-by-step is calcluated local similarity evaluating each (2x2) sub-matrix of the whole matrix, taking the maximum between:
 - the "diagonal" value with respect to the current one +match is bases are equal or -mismatch if they are not equal;
 - the right value ("up" with respect to the value to obtain) -gap
 - the bottom value ("left" with respect to the value to obtain) -gap
